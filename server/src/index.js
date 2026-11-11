@@ -78,7 +78,6 @@ app.use('/api/*', async (c, next) => {
 app.route('/api/auth', auth);
 app.route('/api/test', test);
 app.route('/api/main', main);
-app.route('/api/rss', rss);
 
 // Minimal Test Route for KV
 app.get('/api/test-kv-direct', async (c) => {
