@@ -3,7 +3,6 @@ import { cors } from 'hono/cors';
 import auth from './routes/auth.js';
 import test from './routes/test.js';
 import main from './routes/main.js';
-import rss from './routes/rss.js';
 import {
   getCookie
 } from 'hono/cookie'
