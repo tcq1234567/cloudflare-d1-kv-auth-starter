@@ -1,8 +1,15 @@
-name = "auth-server"
+name = "cloudflare-d1-kv-auth-starter"
 main = "src/index.js"
-compatibility_date = "2024-11-06"
-compatibility_flags = ["nodejs_compat"]
-account_id = "YOUR-ACCOUNT-ID"
+compatibility_date = "2024-11-01"
+
+[[d1_databases]]
+binding = "AUTH_DB"
+database_name = "trading-journal"
+database_id = "6170cd24-b81e-469d-b96f-94ffc66cdc6e"
+
+[[kv_namespaces]]
+binding = "AUTH_KV"
+id = "4befc4c67b324893b92aa5881ba6c30f"
 
 routes = [
   { pattern = "www.your-custom.domain", custom_domain = true }
